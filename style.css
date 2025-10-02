@@ -84,11 +84,13 @@ nav a {
   color: #ff004f;
 }
 
+/* ✅ Hero Text Paragraphs — neat 4 lines */
 .hero-text p {
-  margin-bottom: 20px;
+  margin-bottom: 8px;    /* reduced gap between lines */
+  font-size: 1rem;
+  line-height: 1.5;
   max-width: 500px;
 }
-
 .hero-buttons .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -126,9 +128,11 @@ nav a {
   min-width: 300px;
 }
 
+/* ✅ Hero Image — bigger & pushed to right */
 .hero-image img {
-  width: 400px; /* Increased size */
+  width: 500px;          /* increase image size */
   max-width: 100%;
+  transform: translateX(40px); /* push to the right */
 }
 
 /* Features */
@@ -142,8 +146,8 @@ nav a {
   background: #ffeff5;
   border: none;
   padding: 6px 16px;
-  border-radius: 20px;
-  color: #ff004f;
+ 
+  color:palevioletred !important;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -193,4 +197,7 @@ nav a {
   nav ul {
     display: none; /* mobile menu optional */
   }
+}
+.hero-container {
+  align-items: flex-start; /* aligns text top and image top */
 }
